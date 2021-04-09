@@ -15,82 +15,84 @@
 
   <body>
 <!--Header : contient logo-->
-    <header>    
-        <img class="logo" src="images/logo/ohmyfood.svg" title="Ohmyfood" alt="logo"/>
+    <header class="header">    
+        <img class="header__logo" src="images/logo/ohmyfood.svg" title="Ohmyfood" alt="logo"/>
     </header>
-    <div class="localisation">
-        <i class="fas fa-map-marker-alt"></i>
-        <input class="rechercher" type="search" name="lieu" id="lieu" placeholder="Paris, Belleville"/> 
-    </div>
-<!--Présentation - Bouton coloré-->
-    <div class="section_une">
-        <h1>Réserver le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <div class="explorer">
-            <a href="#Restaurants" id="explorer"> Explorer nos restaurants</a>
-        </div>
-    </div>
-<!--Explications liste chaque élément encadré / change d'apparence au survol-->
-    <div class="section_deux">
-        <h2>Fonctionnement</h2>
-        <ul>
-            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-            <li><i class="fas fa-list"></i> Composez votre menu</li>
-            <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
-        </ul>
-    </div>
-<!--Liste des restaurants avec image - cliquable emmène vers les menus - bordures arrondies-->
-    <div id="restaurants">
-        <a href="#"><!--Remplir avec nouvelle page menu-->
-            <figure class="photos">
-                <img src="images/restaurants/palette du gout.jpg" class="photo_accueil" alt="La palette du goût" title="La palette du goût" /> 
-                <figcaption>
-                    <h3>La palette du goût</h3> 
-                    <p>Ménilmontant</p>
-                    <div class="heart">
-                        <i class="fas fa-heart"></i>
-                    </div> 
-                </figcaption>
-            </figure>    
-        </a>
-        <a href="#"><!--Remplir avec nouvelle page menu-->
-            <figure class="photos">
-                <img src="images/restaurants/note enchantée.jpg" class="photo_accueil" alt="La note enchantée" title="La note enchantée" /> 
-                <figcaption>
-                    <h3>La note enchantée</h3> 
-                    <p>Charonne</p>
-                    <div class="heart">
-                        <i class="fas fa-heart"></i>
-                    </div> 
-                </figcaption>
-            </figure>    
-        </a>
-        <a href="#"><!--Remplir avec nouvelle page menu-->
-            <figure class="photos">
-                <img src="images/restaurants/a la francaise.jpg" class="photo_accueil" alt="A la française" title="A la française" /> 
-                <figcaption>
-                    <h3>A la française</h3> 
-                    <p>Cité Rouge</p>
-                    <div class="heart">
-                        <i class="fas fa-heart"></i>
-                    </div> 
-                </figcaption>
-            </figure>    
-        </a>
-        <a href="#"><!--Remplir avec nouvelle page menu-->
-            <figure class="photos">
-                <img src="images/restaurants/délice des sens.jpg" class="photo_accueil" alt="Le délice des sens" title="Le délice des sens" /> 
-                <figcaption>
-                    <h3>Le délice des sens</h3> 
-                    <p>Folie-Méricourt</p>
-                    <div class="heart">
-                        <i class="fas fa-heart"></i>
-                    </div> 
-                </figcaption>
-            </figure>    
-        </a>
-    </div>
-    
+    <section class="block-location">
+        <i class="block-location__icon fas fa-map-marker-alt"></i>
+        <input class="block-location__search" type="search" name="lieu" id="lieu" placeholder="Paris, Belleville"/> 
+    </section>
+    <main>
+    <!--Présentation - Bouton coloré-->
+        <section class="presentation">
+            <h1 class="presentation__title">Réserver le menu qui vous convient</h1>
+            <h2 class="presentation__subtile">Découvrez des restaurants d'exception, séléctionnés par nos soins</h2>
+            <div class="presentation__explore">
+                <a href="#Restaurants">Explorer nos restaurants</a>
+            </div>
+        </section>
+    <!--Explications liste chaque élément encadré / change d'apparence au survol-->
+        <section class="block-function">
+            <h2 class="block-function__title">Fonctionnement</h2>
+            <ul class="block-function__list">
+                <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+                <li><i class="fas fa-list"></i>Composez votre menu</li>
+                <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+            </ul>
+        </section>
+    <!--Liste des restaurants avec image - cliquable emmène vers les menus - bordures arrondies-->
+        <section class="block-restaurants" id="restaurants">
+            <h2 class="block-restaurants__title">Restaurants</h2>
+            <a href="#"><!--Remplir avec nouvelle page menu-->
+                <figure class="photos">
+                    <img src="images/restaurants/palette du gout.jpg" class="photo_accueil" alt="La palette du goût" title="La palette du goût" /> 
+                    <figcaption>
+                        <h3>La palette du goût</h3> 
+                        <p>Ménilmontant</p>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div> 
+                    </figcaption>
+                </figure>    
+            </a>
+            <a href="#"><!--Remplir avec nouvelle page menu-->
+                <figure class="photos">
+                    <img src="images/restaurants/note enchantée.jpg" class="photo_accueil" alt="La note enchantée" title="La note enchantée" /> 
+                    <figcaption>
+                        <h3>La note enchantée</h3> 
+                        <p>Charonne</p>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div> 
+                    </figcaption>
+                </figure>    
+            </a>
+            <a href="#"><!--Remplir avec nouvelle page menu-->
+                <figure class="photos">
+                    <img src="images/restaurants/a la francaise.jpg" class="photo_accueil" alt="A la française" title="A la française" /> 
+                    <figcaption>
+                        <h3>A la française</h3> 
+                        <p>Cité Rouge</p>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div> 
+                    </figcaption>
+                </figure>    
+            </a>
+            <a href="#"><!--Remplir avec nouvelle page menu-->
+                <figure class="photos">
+                    <img src="images/restaurants/délice des sens.jpg" class="photo_accueil" alt="Le délice des sens" title="Le délice des sens" /> 
+                    <figcaption>
+                        <h3>Le délice des sens</h3> 
+                        <p>Folie-Méricourt</p>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div> 
+                    </figcaption>
+                </figure>    
+            </a>
+        </section>
+    </main>
     <footer>
         <h2 class="Ohmyfood"> Ohmyfood </h2>
         <ul>
