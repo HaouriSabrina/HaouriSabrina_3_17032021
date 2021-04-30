@@ -1,7 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab%7COpen+Sans:400italic,700italic,400,700);
 * {
   margin: 0;
   padding: 0;
-  font-family: "Shrikhand", "roboto";
+  font-family: "roboto", "Shrikhand";
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -12,7 +13,10 @@
 
 a {
   text-decoration: none;
-  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .header {
@@ -34,18 +38,50 @@ img {
   background-color: #ccc9c762;
   font-weight: bold;
 }
-
-.presentation {
-  padding: 10%;
-  background-color: #ececea60;
-  text-align: center;
+.block-location .block-location__search {
+  margin-right: 16px;
 }
 
-.presentation__explore {
+.presentation {
+  padding: 6%;
+  background-color: #ececea60;
+  text-align: center;
+  font-weight: normal;
+}
+.presentation .presentation__explore a {
   padding: 3%;
   margin: 7% 20%;
   background: linear-gradient(70deg, #9356DC, #FF79DA);
   border-radius: 20px;
+  display: block;
+  color: white;
+  box-shadow: 1px 2px 4px 2px rgba(214, 218, 215, 0.788);
+}
+.presentation .presentation__subtitle {
+  font-weight: normal;
+  font-size: 20px;
+  color: grey;
+}
+
+.block-function__title {
+  margin: 15px;
+  padding: 5px;
+}
+
+.footer {
+  background-color: #444444;
+  color: white;
+  font-size: 10px;
+  padding: 3%;
+}
+.footer .footer__title {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+.footer ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
