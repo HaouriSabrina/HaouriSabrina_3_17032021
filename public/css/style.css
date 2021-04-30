@@ -63,25 +63,37 @@ img {
   color: grey;
 }
 
-.block-function__title {
-  margin: 15px;
+.block-function {
+  margin: 10px;
+  padding: 5px;
+}
+.block-function .block-function__title {
   padding: 5px;
 }
 
 .footer {
   background-color: #444444;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   padding: 3%;
 }
 .footer .footer__title {
   font-family: "Shrikhand";
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 2%;
 }
 .footer ul {
   list-style: none;
+}
+.footer ul a {
+  color: white;
+}
+.footer ul li {
+  margin-bottom: 5px;
+}
+.footer ul li i {
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
