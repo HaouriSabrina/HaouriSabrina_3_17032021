@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', 'Shrikhand';
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    &:visited {
+        text-decoration: none;
+        color: black;
+    } 
+}

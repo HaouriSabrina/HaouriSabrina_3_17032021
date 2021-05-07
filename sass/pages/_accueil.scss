@@ -1,0 +1,59 @@
+.block-location {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    background-color: #ccc9c762;
+    font-weight: bold;
+    
+    &__search {
+        margin-right: 16px;
+    }
+}
+
+.presentation {
+    padding: 6%;
+    background-color: #ececea60;
+    text-align: center;
+    font-weight: normal;
+
+    &__explore {
+        a {
+            padding: 3%;
+            margin: 7% 20%;
+            background: linear-gradient(70deg,$primary-color,$secondary-color);
+            border-radius: 20px;
+            display: block;
+            color: white;
+            box-shadow: 1px 2px 4px 2px rgba(214, 218, 215, 0.788);
+        }
+    }
+    &__subtitle {
+        font-weight: normal;
+        font-size: 20px;
+        color: grey;
+    }
+}
+
+.block-function {
+    margin: 10px;
+    padding: 5px;
+    &__title {
+        padding: 5px;
+    }
+}
+
+.block-restaurants {
+    padding: 10px;
+}
+
+.block-restaurants__restaurants {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px red;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
