@@ -23,10 +23,6 @@ a:visited {
   box-shadow: 0 6px 2px -2px rgba(214, 218, 215, 0.788);
 }
 
-img {
-  max-width: 100%;
-}
-
 .block-location {
   display: flex;
   justify-content: center;
@@ -34,37 +30,95 @@ img {
   background-color: #ccc9c762;
   font-weight: bold;
 }
-.block-location .block-location__search {
+.block-location__search {
   margin-right: 16px;
 }
 
 .presentation {
   padding: 6%;
-  background-color: #ececea60;
+  background-color: #f5f5f4d2;
   text-align: center;
   font-weight: normal;
 }
-.presentation .presentation__explore a {
-  padding: 3%;
+.presentation__explore a {
+  padding: 13px;
   margin: 7% 20%;
-  background: linear-gradient(70deg, #9356DC, #FF79DA);
-  border-radius: 20px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border-radius: 30px;
   display: block;
   color: white;
   box-shadow: 1px 2px 4px 2px rgba(214, 218, 215, 0.788);
+  height: 45px;
+  font-size: 15px;
 }
-.presentation .presentation__subtitle {
-  font-weight: normal;
-  font-size: 20px;
+.presentation__subtitle {
+  font-size: 18px;
   color: grey;
+  font-weight: normal;
+}
+.presentation__title {
+  padding: 10px 30px;
 }
 
 .block-function {
   margin: 10px;
   padding: 5px;
 }
-.block-function .block-function__title {
+.block-function__title {
   padding: 5px;
+}
+.block-function li {
+  align-items: center;
+  padding: 6% 10%;
+  margin: 7%;
+  height: 60px;
+  background: #f5f5f4d2;
+  position: relative;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 4px 3px 10px 4px rgba(214, 218, 215, 0.788);
+  font-weight: bold;
+}
+.block-function li:hover {
+  background-color: #dfd2f0;
+}
+.block-function li:hover i {
+  color: #9356DC;
+}
+.block-function li i {
+  padding-right: 15px;
+}
+
+.block-restaurants {
+  padding: 10px;
+  background-color: #f5f5f4d2;
+}
+.block-restaurants__restaurants {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px #e2e1e1;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+}
+.block-restaurants__restaurants img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: 10px 10px 0px 0px;
+}
+.block-restaurants__restaurants img.portrait {
+  object-position: 50% 60%;
+}
+
+.block-restaurants__title {
+  padding: 10px;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .footer {
@@ -73,7 +127,7 @@ img {
   font-size: 15px;
   padding: 3%;
 }
-.footer .footer__title {
+.footer__title {
   font-family: "Shrikhand";
   font-weight: normal;
   font-size: 20px;

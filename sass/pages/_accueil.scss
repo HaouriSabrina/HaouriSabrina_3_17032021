@@ -4,7 +4,7 @@
     padding: 4%;
     background-color: #ccc9c762;
     font-weight: bold;
-    
+
     &__search {
         margin-right: 16px;
     }
@@ -12,48 +12,103 @@
 
 .presentation {
     padding: 6%;
-    background-color: #ececea60;
+    background-color: $background-color;
     text-align: center;
     font-weight: normal;
 
     &__explore {
         a {
-            padding: 3%;
+            padding: 13px;
             margin: 7% 20%;
-            background: linear-gradient(70deg,$primary-color,$secondary-color);
-            border-radius: 20px;
+            background: linear-gradient(170deg,$secondary-color, $primary-color);
+            border-radius: 30px;
             display: block;
             color: white;
             box-shadow: 1px 2px 4px 2px rgba(214, 218, 215, 0.788);
+            height: 45px;
+            font-size: 15px;
         }
     }
     &__subtitle {
-        font-weight: normal;
-        font-size: 20px;
+        font-size: 18px;
         color: grey;
+        font-weight: normal;
+    }
+
+    &__title {
+        padding: 10px 30px;
     }
 }
 
 .block-function {
     margin: 10px;
     padding: 5px;
+
     &__title {
         padding: 5px;
     }
+
+    li {
+        align-items: center;
+        padding: 6% 10%;
+        margin: 7%;
+        height: 60px;
+        background: $background-color;
+        position: relative;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 4px 3px 10px 4px rgba(214, 218, 215, 0.788);
+        font-weight: bold;
+    
+        &:hover {
+            background-color: #dfd2f0;
+    
+            i{
+                color: $primary-color;
+            }
+        }
+        
+        i {
+            padding-right: 15px;
+        }
+    
+    }
 }
+
+
+
 
 .block-restaurants {
     padding: 10px;
+    background-color: $background-color;
+
+    &__restaurants {
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 3px rgb(226, 225, 225);
+        overflow: hidden;
+        display: block;
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: 50% 90%;
+            border-radius: 10px 10px 0px 0px;
+
+            &.portrait {
+                object-position: 50% 60%;
+            }
+        }
+    }
 }
 
-.block-restaurants__restaurants {
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px red;
-    overflow: hidden;
-    img {
-        width: 100%;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
-    }
+.block-restaurants__title {
+    padding: 10px;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
