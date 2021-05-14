@@ -1,0 +1,44 @@
+.restaurants-style {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 25%;
+        align-items: center;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .block-head img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        object-position: 50% 0%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .block-menu__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+        font-family: 'Shrikhand';
+        font-weight: normal;
+    }
+
+    .block-menu {
+        background-color: $background-color;
+        
+        .plat {
+        padding: 6% 2%;
+        margin: 7%;
+        background: white;
+        position: relative;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 4px 3px 10px 4px rgba(214, 218, 215, 0.788);
+        font-weight: bold;
+        }
+    }
+}
