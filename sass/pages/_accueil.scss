@@ -47,10 +47,13 @@
     &__title {
         padding: 5px;
     }
+    
+    ul {
+        list-style: none;
+    }
 
-    li {
-        align-items: center;
-        padding: 6% 10%;
+    &__list {
+        padding: 6% 2%;
         margin: 7%;
         height: 60px;
         background: $background-color;
@@ -59,28 +62,48 @@
         color: black;
         box-shadow: 4px 3px 10px 4px rgba(214, 218, 215, 0.788);
         font-weight: bold;
-    
-        &:hover {
-            background-color: #dfd2f0;
-    
-            i{
-                color: $primary-color;
-            }
-        }
         
+        &--relative {
+            position: relative;
+            right: 7%;
+            color: white;
+            border-radius: 50%;
+            background-color: $primary-color;
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+
         i {
             padding-right: 15px;
+            color: grey;
         }
+
+        &--purple {
     
+            background-color: #dfd2f0;
+            i {
+                color: $primary-color;
+            }
+        
+        }
+
     }
 }
 
-
-
-
 .block-restaurants {
-    padding: 10px;
+    padding: 50px 10px;
     background-color: $background-color;
+
+    span {
+        position: absolute;
+        left: 67%;
+        margin-top: 10px;
+        background-color: #98e2cf;
+        color: #008766;
+        font-weight: bold;
+        border-radius: 3px 3px;
+        padding: 8px 15px;
+    }
 
     &__restaurants {
         border-radius: 15px;
@@ -109,6 +132,16 @@
 
 figcaption {
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: row;
+    padding: 13px;
+
+    .heart{
+        font-size: 28px;
+        font-weight: normal;
+    }
 }
+
+.column {
+    width: 88%;
+}
+
