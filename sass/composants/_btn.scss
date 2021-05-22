@@ -1,7 +1,7 @@
 .btn {
     padding: 13px;
     margin: 7% 20%;
-    background: linear-gradient(170deg,$secondary-color, $primary-color);
+    background: $btn-color;
     border-radius: 30px;
     display: block;
     color: white;
@@ -13,5 +13,24 @@
     &:visited {
         text-decoration: none;
         color: white;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content:"";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;  
+        left: 0;
+        background-color: linear-gradient(170deg,lighten($secondary-color,10), lighten($primary-color,10));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
     }
 }
