@@ -2,13 +2,15 @@
     padding: 13px;
     margin: 7% 20%;
     background: $btn-color;
-    border-radius: 30px;
+    border-radius: $border-rad;
     display: block;
     color: white;
     box-shadow: 1px 2px 4px 2px rgba(214, 218, 215, 0.788);
     height: 45px;
     font-size: 15px;
     text-align: center;
+    position: relative;
+    z-index :1;
 
     &:visited {
         text-decoration: none;
@@ -28,9 +30,11 @@
         right: 0;
         bottom: 0;  
         left: 0;
-        background-color: linear-gradient(170deg,lighten($secondary-color,10), lighten($primary-color,10));
+        background: linear-gradient(170deg,lighten($secondary-color,10), lighten($primary-color,10));
         opacity: 0;
+        border-radius: $border-rad;
         z-index: -1;
         transition: opacity 250ms;
+        box-shadow: 1px 2px 4px 2px darken($shadow, 10);
     }
 }
