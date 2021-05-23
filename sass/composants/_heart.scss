@@ -1,16 +1,23 @@
-.full {
-    background: -webkit-linear-gradient(80deg,$secondary-color, $primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    position: relative;
-    display: block;
-    opacity: 0;
+.heart {
 
-    &:hover {
+    &:hover .full{
         opacity: 1;
+        transform : scale(1.1);
+        transition: all 400ms;
     }
-}
 
-.empty {
-    position: absolute;
+    .full {
+        background: -webkit-linear-gradient(80deg,$secondary-color, $primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+        position: relative;
+        display: block;
+        opacity: 0;
+        z-index: 1;
+        transform: scale(0.1);
+    }
+    
+    .empty {
+        position: absolute;
+    }
 }

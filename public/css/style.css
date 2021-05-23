@@ -278,19 +278,22 @@ figcaption .heart {
   display: inline;
 }
 
-.full {
+.heart:hover .full {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 400ms;
+}
+.heart .full {
   background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   display: block;
   opacity: 0;
+  z-index: 1;
+  transform: scale(0.1);
 }
-.full:hover {
-  opacity: 1;
-}
-
-.empty {
+.heart .empty {
   position: absolute;
 }
 
