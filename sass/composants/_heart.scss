@@ -1,0 +1,16 @@
+.full {
+    background: -webkit-linear-gradient(80deg,$secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    position: relative;
+    display: block;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.empty {
+    position: absolute;
+}

@@ -4,11 +4,11 @@
   padding: 0;
   font-family: "roboto", "Shrikhand";
   box-sizing: border-box;
-  transition: 0.5s;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:visited {
   text-decoration: none;
@@ -276,6 +276,22 @@ figcaption .heart {
   font-weight: normal;
   font-size: 15px;
   display: inline;
+}
+
+.full {
+  background: -webkit-linear-gradient(80deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: block;
+  opacity: 0;
+}
+.full:hover {
+  opacity: 1;
+}
+
+.empty {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
