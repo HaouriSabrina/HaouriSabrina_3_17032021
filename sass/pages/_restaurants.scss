@@ -41,15 +41,15 @@
         background-color: $background-color;
 
         .block-menu__entree {
-            animation : plat 2000ms 10ms;
+            animation : plat 1500ms 100ms;
         }
 
         .block-menu__plat {
-            animation : plat 3000ms 10ms;
+            animation : plat 2500ms 100ms;
         }
 
         .block-menu__dessert {
-            animation : plat 4000ms 10ms;
+            animation : plat 3500ms 100ms;
         }
         
         .plat {
