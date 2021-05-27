@@ -247,12 +247,21 @@ figcaption .heart {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  animation: plat 2000ms 10ms;
 }
 .restaurants-style .block-menu .plat .prix {
   padding-top: 27px;
   padding-right: 10px;
 }
-.restaurants-style .block-menu h2 {
+@keyframes plat {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.restaurants-style h2 {
   border-bottom: solid #99E2D0;
   width: 13%;
   margin: 13% 0% 0% 7%;
