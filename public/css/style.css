@@ -236,6 +236,15 @@ figcaption .heart {
   overflow: overlay;
   background-color: #f5f5f4;
 }
+.restaurants-style .block-menu .block-menu__entree {
+  animation: plat 2000ms 10ms;
+}
+.restaurants-style .block-menu .block-menu__plat {
+  animation: plat 3000ms 10ms;
+}
+.restaurants-style .block-menu .block-menu__dessert {
+  animation: plat 4000ms 10ms;
+}
 .restaurants-style .block-menu .plat {
   padding: 4% 2%;
   margin: 5%;
@@ -247,7 +256,6 @@ figcaption .heart {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
-  animation: plat 2000ms 10ms;
 }
 .restaurants-style .block-menu .plat .prix {
   padding-top: 27px;
